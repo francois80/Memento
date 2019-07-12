@@ -15,23 +15,35 @@
 }
 
 /*mettre la police en Arial*/
-.NewPolice {font-family: Arial}
+.NewPolice {font-family: Arial;}
 
 /*Mmettre un fond bleu*/
-.FondBleu {background-color: blue}
+.FondBleu {background-color: blue;}
 
 /*mettre une image en fond*/
-p.IMGfond {background-image: url("https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png")}
+.IMGfond {
+  background-image: url("https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png");
+}
 
-/*mettre une marge à gauche*/
-.MargeLeft {margin-left: 10px}
+/*mettre une marge à gauche et à droite*/
+.MargeLeft {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 /*mettre un fond bleu avec une marge générale de 10px*/
-.FdBleuMarge {background-color: blue;
+.FdBleuMarge {
+  background-color: blue;
   margin: 10px;
 }
 
 /*tabulation*/
-.Tabula20 {padding: 0 0 0 20px}
-.Tabula40 {padding: 0 0 0 40px}
-.Tabula60 {padding: 0 0 0 60px}
+.Tabula20 {
+  padding: 0 0 0 20px;
+}
+.Tabula40 {
+  padding: 0 0 0 40px;
+}
+.Tabula60 {
+  padding: 0 0 0 60px;
+}
