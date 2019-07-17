@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>HTML et CSS</title>
+</head>
+
+<body>
+  <div class="container">
+    <!--CSS-->
+    <!--Exercice 1-->
+    <h1>Css exercice 1
+      reproduire en html une image representant du texte en utilisant css
+    </h1>
+    <PRE>
+      &lt;body&gt;
+      &lt;p id="TXTgras"&gt;Citizen Kane&lt;/p&gt;
+      &lt;p&gt;Kane favori pour le poste de gouverneur, tient son discours de campagne.
+      Au début des années 1940, Charles&lt;br&gt;Forster Kane meurt dans son manoir du Xanadu,
+      un vaste domaine palatial de Floride, en prononçant dans un dernier souffle
+      rosebud&lt;/p&gt;
+      &lt;/body&gt;
+    </PRE>
+    <p>ici nous utilisons un ID qui renvoie à la feuille de style.
+      il est défini de la manière suivante :</p>
+      <PRE>
+        /*mettre le texte en gras*/
+        #TXTgras {font-weight: bold;}
+      </PRE>
+      <p>Et voici le résultat :</p>
+      <p id="TXTgras">Citizen Kane</p>
+      <p>Kane favori pour le poste de gouverneur, tient son discours de campagne.
+        Au début des années 1940, Charles<br>Forster Kane meurt dans son manoir du Xanadu,
+        un vaste domaine palatial de Floride, en prononçant dans un dernier souffle
+        rosebud</p>
+        <!--Exercice 2-->
+        <h1>Css exercice 2
+          idem exercice 1, mais avec plus de css
+        </h1>
+        <PRE>
+          &lt;body&gt;
+          &lt;p id="TXTcentre"&gt;Citizen Kane&lt;/p&gt;
+          &lt;p&gt;&lt;span class="TXTrouge"&gt;Kane&lt;/span&gt; favori pour le poste de gouverneur, tient son discours de campagne.
+          Au début des années 1940, &lt;span class="TXTrouge"&gt;Charles&lt;br&gt;Forster Kane&lt;/span&gt; meurt dans son manoir du &lt;span class="TXTvert"&gt;Xanadu&lt;/span&gt;,
+          un vaste domaine palatial de &lt;span class="TXTvert"&gt;Floride&lt;/span&gt;, en prononçant dans un dernier souffle
+          &lt;span class="TXTitalic"&gt;rosebud&lt;/span&gt;&lt;/p&gt;
+          &lt;/body&gt;
+        </PRE>
+        <p>ici nous utilisons un ID et des classes qui renvoie à la feuille de style.
+          il sont définis de la manière suivante :</p>
+          <PRE>
+            /* centrer le texte et le mettre en gras*/
+            #TXTcentre {text-align: center;
+              font-weight: bold;
+            }
+
+            /*mettre le texte en rouge*/
+            .TXTrouge {color: red;}
+
+            /*mettre le texte en rouge*/
+            .TXTvert {color:green;}
+
+            /*mettre le texte en italic*/
+            .TXTitalic {font-style: italic;}
+          </PRE>
+          <p>Et voici le résultat :</p>
+          <p id="TXTcentre">Citizen Kane</p>
+          <p><span class="TXTrouge">Kane</span> favori pour le poste de gouverneur, tient son discours de campagne.
+            Au début des années 1940, <span class="TXTrouge">Charles<br>Forster Kane</span> meurt dans son manoir du <span class="TXTvert">Xanadu</span>,
+            un vaste domaine palatial de <span class="TXTvert">Floride</span>, en prononçant dans un dernier souffle
+            <span class="TXTitalic">rosebud</span></p>
+            <!--Exercice 3-->
+            <h1>Css exercice 3
+              Créer un paragraphe et changer sa police en Arial.
+            </h1>
+            <pre>
+              &lt;body&gt;
+              &lt;p&gt;Citizen Kane&lt;/p&gt;
+              &lt;p class="NewPolice"&gt;Kane favori pour le poste de gouverneur, tient son discours de campagne.
+              Au début des années 1940, Charles&lt;br&gt;Forster Kane meurt dans son manoir du Xanadu,
+              un vaste domaine palatial de Floride, en prononçant dans un dernier souffle
+              rosebud&lt;/p&gt;
+              &lt;/pre&gt;
+              &lt;/body&gt;
+            </pre>
+            <p>ici nous utilisons une classe qui renvoie à la feuille de style.
+              il sont définis de la manière suivante :
+              <PRE>
+                /*mettre la police en Arial*/
+                .NewPolice {font-family: Arial}
+              </pre>
+              <p>Et voici le résultat :</p>
+              <p>Citizen Kane</p>
+              <p class="NewPolice">Kane favori pour le poste de gouverneur, tient son discours de campagne.
+                Au début des années 1940, Charles<br>Forster Kane meurt dans son manoir du Xanadu,
+                un vaste domaine palatial de Floride, en prononçant dans un dernier souffle
+                rosebud</p>
+                <!--Exercice 4-->
+                <h1>Css exercice 4
+                  Créer un fichier html comprenant un paragraphe. Mettre en couleur de fond pour ce  paragraphe du bleu.
+                </h1>
+                <pre>
+                  &lt;body&gt;
+                  &lt;p id="TXTgras"&gt;Citizen Kane&lt;/p&gt;
+                  &lt;p class="FondBleu"&gt;Kane favori pour le poste de gouverneur, tient son discours de campagne.
+                  Au début des années 1940, Charles&lt;br&gt;Forster Kane meurt dans son manoir du Xanadu,
+                  un vaste domaine palatial de Floride, en prononçant dans un dernier souffle
+                  rosebud&lt;/p&gt;
+                  &lt;/body&gt;
+                </pre>
+                <p>ici nous utilisons un ID et une classe qui renvoie à la feuille de style.
+                  il sont définis de la manière suivante :</p>
+                  <PRE>
+                    /*mettre le texte en gras*/
+                    #TXTgras {font-weight: bold;}
+
+                    /*Mmettre un fond bleu*/
+                    .FondBleu {background-color: blue}
+                  </pre>
+                  <p>Et voici le résultat :</p>
+                  <p id="TXTgras">Citizen Kane</p>
+                  <p class="FondBleu">Kane favori pour le poste de gouverneur, tient son discours de campagne.
+                    Au début des années 1940, Charles<br>Forster Kane meurt dans son manoir du Xanadu,
+                    un vaste domaine palatial de Floride, en prononçant dans un dernier souffle
+                    rosebud</p>
+                    <!--Exercice 5-->
+                    <h1>Css exercice 5
+                      Créer un fichier html comprenant un paragraphe. Mettre une image de fond sur la page.
+                    </h1>
+                    <pre>
+                      &lt;body&gt;
+                      &lt;p id="TXTcentre"&gt;Citizen Kane&lt;/p&gt;
+                      &lt;p class="IMGfond"&gt;Kane favori pour le poste de gouverneur, tient son discours de campagne.
+                      Au début des années 1940, Charles&lt;br&gt;Forster Kane meurt dans son manoir du Xanadu,
+                      un vaste domaine palatial de Floride, en prononçant dans un dernier souffle
+                      rosebud&lt;/p&gt;
+                      &lt;/body&gt;
+                    </PRE>
+                    <p>ici nous utilisons un ID qui renvoie à la feuille de style
+                    </p>
+                    <PRE>
+                      /*mettre une image en fond*/
+                      .IMGfond {background-image: url("https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png")}
+                    </pre>
+                    <p>Et voici le résultat :</p>
+                    <p id="TXTcentre">Citizen Kane</p>
+                    <p class="IMGfond">Kane favori pour le poste de gouverneur, tient son discours de campagne.
+                      Au début des années 1940, Charles<br>Forster Kane meurt dans son manoir du Xanadu,
+                      un vaste domaine palatial de Floride, en prononçant dans un dernier souffle
+                      rosebud</p>
+                      <!--Exercice 6-->
+                      <h1>Css exercice 6
+                        Créer un fichier html avec deux paragraphes. Le premier paragraphe doit avoir une marge externe de 10px
+                      </h1>
+                      <pre>
+                        &lt;body&gt;
+                        &lt;p class="MargeLeft"&gt;Citizen Kane&lt;/p&gt;
+                        &lt;p class="MargeLeft"&gt;Kane favori pour le poste de gouverneur, tient son discours de campagne.
+                        Au début des années 1940, Charles&lt;br&gt;Forster Kane meurt dans son manoir du Xanadu,
+                        un vaste domaine palatial de Floride, en prononçant dans un dernier souffle
+                        rosebud&lt;/p&gt;
+                        &lt;p&gt;Citizen Kane&lt;/p&gt;
+                        &lt;p&gt;Kane favori pour le poste de gouverneur, tient son discours de campagne.
+                        Au début des années 1940, Charles&lt;br&gt;Forster Kane meurt dans son manoir du Xanadu,
+                        un vaste domaine palatial de Floride, en prononçant dans un dernier souffle
+                        rosebud&lt;/p&gt;
+                        &lt;/body&gt;
+                      </PRE>
+                      <p>ici nous utilisons une classe qui renvoie à la feuille de style
+                      </p>
+                      <PRE>
+                        /*mettre une marge à gauche*/
+                        .MargeLeft {margin-left: 10px}
+                      </pre>
+                      <p>Et voici le résultat :</p>
+                      <p class="MargeLeft">Citizen Kane</p>
+                      <p class="MargeLeft">Kane favori pour le poste de gouverneur, tient son discours de campagne.
+                        Au début des années 1940, Charles<br>Forster Kane meurt dans son manoir du Xanadu,
+                        un vaste domaine palatial de Floride, en prononçant dans un dernier souffle
+                        rosebud</p>
+                        <p>Citizen Kane</p>
+                        <p>Kane favori pour le poste de gouverneur, tient son discours de campagne.
+                          Au début des années 1940, Charles<br>Forster Kane meurt dans son manoir du Xanadu,
+                          un vaste domaine palatial de Floride, en prononçant dans un dernier souffle
+                          rosebud</p>
+                          <!--Exercice 7-->
+                          <h1>Css exercice 7
+                            Créer un fichier html avec une div. A l'intérieur de cette div, créer un paragraphe. Définir la couleur de fond de la div à bleu et les marges intérieures de la div à 10px.
+                          </h1>
+                          <pre>
+                            &lt;body&gt;
+                            &lt;div class="FdBleuMarge"&gt;
+                            &lt;p&gt;Citizen Kane&lt;/p&gt;
+                            &lt;p&gt;Kane favori pour le poste de gouverneur, tient son discours de campagne.
+                            Au début des années 1940, Charles&lt;br&gt;Forster Kane meurt dans son manoir du Xanadu,
+                            un vaste domaine palatial de Floride, en prononçant dans un dernier souffle
+                            rosebud
+                            &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;/body&gt;
+                          </pre>
+                          <p>ici nous utilisons une classe qui renvoie à la feuille de style
+                          </p>
+                          <PRE>
+                            /*mettre un fond bleu avec une marge générale de 10px*/
+                            .FdBleuMarge {background-color: blue;
+                              margin: 10px;
+                            }
+                          </pre>
+                          <p>Et voici le résultat :</p>
+                          <div class="FdBleuMarge">
+                            <p>Citizen Kane</p>
+                            <p>Kane favori pour le poste de gouverneur, tient son discours de campagne.
+                              Au début des années 1940, Charles<br>Forster Kane meurt dans son manoir du Xanadu,
+                              un vaste domaine palatial de Floride, en prononçant dans un dernier souffle
+                              rosebud
+                            </p>
+                          </div>
+                        </div>
+                      </body>
+                      </html>
